@@ -1,11 +1,3 @@
----
-keywords: [static website, basic website, html, host a website, beginner]
----
-
-# Static website
-
-[View this sample's code on GitHub](https://github.com/RoboticScandal/IPC-Wallet.git)
-
 ## Overview
 The example shows how to deploy a simple wallet, this is the output example:
 
