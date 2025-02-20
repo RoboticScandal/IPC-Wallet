@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICP with Adam Alhasni</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .balance {
+            font-size: 24px;
+            font-weight: 600;
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .buttons button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .buy {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .sell {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .swap {
+            background-color: #ffc107;
+            color: white;
+        }
+
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>ICP Wallet</h2>
+        <p class="balance">Balance: <span id="balance">100 ICP</span></p>
+        <div class="buttons">
+            <button class="buy" onclick="buyICP()">Buy ICP</button>
+            <button class="sell" onclick="sellICP()">Sell ICP</button>
+            <button class="swap" onclick="swapICP()">Swap ICP</button>
+        </div>
+    </div>
+
+    <script>
+        let balance = 100;
+
+        function buyICP() {
+            balance += 10;
+            updateBalance();
+        }
+
+        function sellICP() {
+            if (balance >= 10) {
+                balance -= 10;
+                updateBalance();
+            } else {
+                alert("Not enough ICP to sell!");
+            }
+        }
+
+        function swapICP() {
+            alert("Swap feature coming soon!");
+        }
+
+        function updateBalance() {
+            document.getElementById("balance").textContent = balance + " ICP";
+        }
+    </script>
+
+</body>
+
+</html>
