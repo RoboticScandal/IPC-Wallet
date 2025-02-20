@@ -4,12 +4,12 @@ keywords: [static website, basic website, html, host a website, beginner]
 
 # Static website
 
-[View this sample's code on GitHub](https://github.com/dfinity/examples/tree/master/hosting/static-website)
+[View this sample's code on GitHub](https://github.com/RoboticScandal/IPC-Wallet.git)
 
 ## Overview
-The example shows how to deploy a simple, static website on the IC in an asset canister. The website is very simple, it just shows the DFINITY logo and has a basic styling of the logo. 
+The example shows how to deploy a simple wallet, this is the output example:
 
-![Website](README_images/website.png)
+![Website](README_images/website.jpeg)
 
 The purpose of this example is to show how to deploy a static website in an asset canister. While the website in this example is very simple, the method would be the same for a more advanced static website, e.g. based on popular static site generators.
 
@@ -20,20 +20,12 @@ This example covers:
 - Deploy the canister smart contract locally
 - Test the frontend in browser 
 
-## Prerequisites
-
-This example requires an installation of:
-
-- [x] Install the [IC SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/).
-
-- [x] Download and install [git](https://git-scm.com/downloads).
-
 ### Install
 Install the example dapp project:
 
 ```bash
-git clone https://github.com/dfinity/examples
-cd examples/hosting/static-website
+git clone https://github.com/RoboticScandal/IPC-Wallet
+cd ICP_test
 ```
 
 ## Documentation
@@ -57,21 +49,6 @@ The website is simple. It consists of an HTML file, a CSS file and a PNG file. T
     </body>
 </html>
 ```
-
-The only styling done in the CSS file is aligning the logo image:
-
-```css
-img {
-    max-width: 50vw;
-    max-height: 25vw;
-    display: block;
-    margin: auto;
-}
-```
-
-The project folder will then look like this:
-
-![Project Files](README_images/project_files.png)
 
 ### dfx.json
 The `dfx.json` file is a configuration file which specifies the canister used for the dapp. In this case only one canister is needed, and besides the canister configuration, `dfx.json` also includes information about DFX version, build settings and network settings.
@@ -120,14 +97,6 @@ When the local replica is up and running, run this command to deploy the caniste
 ```bash
 dfx deploy
 ```
-
-
-## Testing
-The URL for the frontend depends on the canister ID.  Local canister IDs can be obtained using `dfx canister id`, in this case `dfx canister id www`. When deployed, the URL will look like this:
-
-**http://\{ui_canister_id\}.localhost:8000**
-
-![Candid UI](README_images/website.png)
 
 ## License
 This project is licensed under the Apache 2.0 license, see `LICENSE.md` for details. See `CONTRIBUTE.md` for details about how to contribute to this project. 
