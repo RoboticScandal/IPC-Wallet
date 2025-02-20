@@ -31,25 +31,6 @@ cd ICP_test
 ## Documentation
 There are two parts in this dapp. One is the website and the other is `dfx.json`. Since there's no backend, there is not any benefit of using the `dfx new project_name` command to set up a template. The `dfx.json` file is all that is needed.
 
-### Website
-The website is simple. It consists of an HTML file, a CSS file and a PNG file. The content of the HTML file looks like this:
-
-```html
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Static Website</title>
-        <base href="/">
-        <link type="text/css" rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <img src="logo.png" alt="DFINITY logo" />
-    </body>
-</html>
-```
-
 ### dfx.json
 The `dfx.json` file is a configuration file which specifies the canister used for the dapp. In this case only one canister is needed, and besides the canister configuration, `dfx.json` also includes information about DFX version, build settings and network settings.
 
