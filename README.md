@@ -4,9 +4,7 @@
 [View this sample's code on GitHub](https://github.com/RoboticScandal/IPC-Wallet.git)
 
 ## Overview
-The example shows how to deploy a simple wallet, this is the output example:
-
-![Website](README_images/website.jpeg)
+The example shows how to deploy a simple wallet, the output example is inside the "ICP-test" folder
 
 The purpose of this example is to show how to deploy a static website in an asset canister. While the website in this example is very simple, the method would be the same for a more advanced static website, e.g. based on popular static site generators.
 
