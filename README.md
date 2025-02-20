@@ -1,7 +1,6 @@
 # My First Smart Contract :D
 # Static website
-
-[View this sample's code on GitHub]([https://github.com/RoboticScandal/IPC-Wallet.git](https://github.com/RoboticScandal/IPC-Wallet/blob/main/ICP-test/assets/src/index.html))
+View this sample's code on ICP-test -> assets -> src -> index.html
 
 ## Overview
 The example shows how to deploy a simple wallet, the output example is inside the "ICP-test" folder
